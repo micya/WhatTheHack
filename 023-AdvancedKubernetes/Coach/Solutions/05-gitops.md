@@ -1,3 +1,5 @@
+[< Previous Challenge](./04-scaling.md)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Next Challenge>](./06-service-mesh.md)
+
 Here are the steps to deploy Flux in your AKS cluster.
 
 ```bash

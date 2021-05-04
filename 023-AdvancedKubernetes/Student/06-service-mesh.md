@@ -24,25 +24,30 @@ Microsoft has also written the [Service Mesh Interface](https://smi-spec.io/) to
 
 ## Description
 
-For this challenge, we will deploy a Service Mesh and review some of the top features.  Because there are different service meshes with similar functionality, we will not be prescriptive in the choice of the service mesh.  If you're not sure which one, choose Istio.  It has the most features and walk-through documentation.
+For this challenge, we will deploy a Service Mesh and review some of the top features. Because there are different service meshes with similar functionality, we will not be prescriptive in the choice of the service mesh. If you're not sure which one, choose Istio. It has the most features and walk-through documentation.
 
-Each of the Service Meshes have their own set of documentation for how to implement these features.  Please follow the instructions for your specific service mesh.
+Each of the Service Meshes have their own set of documentation for how to implement these features. Please follow the instructions for your specific service mesh.
 
 1. Install the Service Mesh CLI
     - e.g. istioctl For Istio, linkerd for Linkerd
 1. Install the Service Mesh on your Kubernetes cluster
 1. Enable Mutual TLS
+1. Enable high-level metrics
 1. Apply distributed tracing with Jaeger
-1. Enable high-level metrics 
-1. Test the "Fault Injection" feature
-1. Use Flagger to automate a canary release
-    - NOTE: make sure to disable mTLS before configuring Flagger
 
 ## Success Criteria
 
-- After enabling distributed tracing, make a request to the service and confirm you can see how long it takes in each service.
 - Verify that you can only access pod to pod traffic via HTTPS
 - You can view the high-level metrics in Grafana
+- After enabling distributed tracing, make a request to the service and confirm you can see how long it takes in each service.
+
+## Optional
+
+Try out the following if your service mesh supports it (both Istio and Linkerd would work):
+
+1. Test Fault Injection
+1. Use Flagger to automate a canary release
+    - NOTE: make sure to disable mTLS before configuring Flagger
 
 ## Hints
 
